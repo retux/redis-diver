@@ -3,6 +3,8 @@
 
 **WARNING**: if -d | --delete-entries flag is provided, -o | --older-than must be provided too.
 
+
+```bash
 -i            | --help                        Show this message.
 -o <time>     | --older-than <time>           List entries with idle time greater than <time> (in seconds or Nd e.g 15d).
 -d            | --delete-entries              Deletes entries with idletime (Requires -o <time>)
@@ -12,10 +14,10 @@
 -l            | --list-keyspaces              List existing keyspaces. 
 -s            | --dump-keys                   Only show (stdout) or dump keys.
 -n            | --no-ttl                      Together with -s or --dump-keys displays only the keys that don't expire
-                                              (TTL = -1).
+```                                           (TTL = -1).
 
 
-Examples:
+**Examples**:
 
 ```bash
 $ redis-diver.py --older-than 2592000 --delete-entries
