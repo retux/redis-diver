@@ -14,7 +14,9 @@
 -l            | --list-keyspaces              List existing keyspaces. 
 -s            | --dump-keys                   Only show (stdout) or dump keys.
 -n            | --no-ttl                      Together with -s or --dump-keys displays only the keys that don't expire
-```                                           (TTL = -1).
+                                              (TTL = -1).
+
+```
 
 
 **Examples**:
