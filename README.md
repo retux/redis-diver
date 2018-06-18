@@ -1,7 +1,7 @@
-usage: redis-diver.py Explores redis and looks for entries older than a given threshold (-o | --older-than).  
+**usage**: redis-diver.py Explores redis and looks for entries older than a given threshold (-o | --older-than).  
 
 
-WARNING: if -d | --delete-entries flag is provided, -o | --older-than must be provided too.
+**WARNING**: if -d | --delete-entries flag is provided, -o | --older-than must be provided too.
 
 -i            | --help                        Show this message.
 -o <time>     | --older-than <time>           List entries with idle time greater than <time> (in seconds or Nd e.g 15d).
@@ -17,16 +17,21 @@ WARNING: if -d | --delete-entries flag is provided, -o | --older-than must be pr
 
 Examples:
 
+```bash
 $ redis-diver.py --older-than 2592000 --delete-entries
+```
 
 Will delete entries with idletime >= 2592000 and TTL is not set (-1).
 
-
+```bash
 $ redis-diver.py --older-than 15d --delete-entries
+```
 
 Will delete entries with idletime >= 15 days and TTL is not set (-1).
 
+```bash
 $ redis-diver.py --dump-keys
+```
 
 Will dump all keys
 
